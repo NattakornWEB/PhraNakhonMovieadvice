@@ -1,0 +1,57 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative; /* ให้ปุ่มอยู่ภายในตำแหน่งของ carousel */
+    background-color: rgb(107, 2, 2);
+    pointer-events: none; /* ป้องกันไม่ให้ track รับคลิกจากผู้ใช้ */
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งใส */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 1000; /* z-index สูงกว่าทุกอย่างใน carousel */
+    pointer-events: all; /* ให้ปุ่มสามารถรับคลิกได้ */
+}
+
+.arrow-left {
+    left: 250px; /* ตำแหน่งทางซ้าย */
+}
+
+.arrow-right {
+    right: 250px; /* ตำแหน่งทางขวา */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.carousel-slide {
+    min-width: 200px;
+    margin: 10px;
+    -webkit-text-fill-color: antiquewhite;
+
+}
+
+.carousel-slide img {
+    width: 220px;
+    height: 270px;
+    border-radius: 8px;
+}
+
+.carousel-slide p {
+    text-align: center;
+    margin: 5px 0;
+}

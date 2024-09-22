@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+
+    <title>ระบบสุ่มหนัง</title>
+    
+    <style>
+    
+    div.body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.containerMOVIERANDOM {
+    text-align: center;
+    background: rgb(255, 255, 255);;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#movie-title {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #555;
+    text-align: center;
+}
+
+#movie-image {
+    width: 450px;
+    height: auto; /* รักษาสัดส่วน */
+    display: none; /* ซ่อนภาพเริ่มต้น */
+    margin-top: 10px; /* ระยะห่างด้านบน */
+    margin-left: 700px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Index.html">กลับสู่หน้าหลัก</a>
+    </div>
+
+    <div class="containerMOVIERANDOM">
+        <h1>ดูหนังอะไรดี?</h1>
+        
+        <label for="genre">เลือกประเภทหนัง:</label>
+        <select id="genre">
+            <option value="all">All</option>
+            <option value="action">Action</option>
+            <option value="drama">Drama</option>
+            <option value="comedy">Comedy</option>
+            <option value="sci_fi">Sci-fi</option>
+            <option value="horror">Horror</option>
+            <option value="romance">Romance</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="animation">Animation</option>
+        </select>
+        
+        <button onclick="getRandomMovie()">สุ่มหนัง</button>
+        
+        <h2 id="movie-title"></h2>
+        <img id="movie-image" src="" alt="Movie Image" />
+    </div>
+
+    <script src="randommovie.js"></script>
+</body>
+</html>

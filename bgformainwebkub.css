@@ -1,0 +1,49 @@
+.container {
+    max-width: 1890px;      
+    height: calc(1200px - 100px);
+    margin-top: 0px;
+    background-color: rgb(107, 2, 2);
+    position: relative;
+    padding-bottom: 100px; /* เพิ่มพื้นที่สำหรับ Footer */
+}
+
+.slideshow {
+    width: 1890px;
+    height: 400px;
+    padding: 200px 0;
+    text-align: center;
+    background: rgb(107, 2, 2);
+}
+
+.containertrailer {
+    width: 1890px;
+    height: 400px;
+    background-color: rgb(107, 2, 2);
+    top: 100%; 
+}
+
+.trailerframe {
+    width: 1890px;
+    height: 400px;
+    background-color: rgb(107, 2, 2);
+    position: absolute;
+    top: 190px;   
+}
+
+.columnmovie {
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+    background-color: #ccc;
+    height: 250px;
+}
+
+.footer {
+    background: #000000;
+   color: white;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+}
